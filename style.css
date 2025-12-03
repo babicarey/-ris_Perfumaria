@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root{
+--branco: #fff;
+--preto: #000;
+--fundo-site: #030304;
+--azul-claro: #555cFF;
+--azul-escuro: #3253a1;
+}
+
+body{
+    background-color: var(--fundo-site);
+}
