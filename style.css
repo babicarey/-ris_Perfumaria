@@ -1,19 +1,109 @@
-* {
-    padding: 0;
+
+    * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
+    
 }
-
 
 :root{
---branco: #fff;
---preto: #000;
---fundo-site: #030304;
---azul-claro: #555cFF;
---azul-escuro: #3253a1;
+    --azul-claro:#555cff;
+    --azul-escuro:#3253A1;
+    --branco: #fff;
+    --cor-site:#030304;
+    --preto:#0000;
+    --cor-final:#171717;
 }
 
-body{
-    background-color: var(--fundo-site);
+body {
+    background-color: var(--cor-site);
+    color: var(--branco);
+    overflow-x: hidden;
 }
+
+
+
+
+header {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1000;
+    color: var(--branco);
+    
+}
+
+#logo {
+    height: 45px;
+}
+
+
+
+.EXPLORAR {
+    margin-top: 150px;
+    text-align: center;
+    padding: 120px 15%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#menu.links {
+    display: flex;
+    gap: 100px;
+}
+
+.destaques {
+    padding: 80px 0;
+    border-radius: 50px;
+}
+
+
+.destaque img {
+    border-radius: 50px;
+}
+
+.faixa {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+
+
+.categorias {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.categoria-item {
+    display: inline-block;
+    margin: 30px 25px;
+}
+
+
+
+.INFORMADO {
+    padding: 120px 20%;
+    text-align: center;
+    background: #131013;
+}
+
+.INFORMADO h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.INFORMADO p {
+    margin-bottom: 35px;
+}
+
+
+
+
+
