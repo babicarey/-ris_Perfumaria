@@ -1,9 +1,9 @@
 
-    * {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 :root{
@@ -16,94 +16,221 @@
 }
 
 body {
-    background-color: var(--cor-site);
+    background:var(--cor-site);
     color: var(--branco);
-    overflow-x: hidden;
+    font-family: "Cinzel";
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
 }
-
-
 
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 20px 60px;
+    padding: 30px 70px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    z-index: 1000;
-    color: var(--branco);
-    
+    align-items: center;
+    z-index: 10;
 }
 
 #logo {
-    height: 45px;
+    width: 70px;
 }
 
-
-
-.EXPLORAR {
-    margin-top: 150px;
-    text-align: center;
-    padding: 120px 15%;
-    background-size: cover;
-    background-position: center;
-
-}
-
-
-#menu.links {
+#menu {
     display: flex;
-    gap: 100px;
+    gap: 40px;
 }
+
+#menu a {
+    text-decoration: none;
+    color:var(--branco);
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.explorar {
+    max-width: 800px;
+    margin: 120px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.explorar h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.explorar h2::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: var(--azul-claro);
+    display: block;
+    margin: 10px auto 0;
+}
+
+.explorar p {
+    font-size: 14px;
+    max-width: 700px;
+    opacity: 0.8;
+    margin: 0 auto 40px;
+
+}
+
+.btn-explorar {
+    display: inline-block;
+    border: 1px solid var(--branco);
+    padding: 10px 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--branco);
+    transition: 0.3s ease;
+}
+
+.btn-explorar:hover {
+    background:var(--branco);
+    color:var(--preto);
+}
+
 
 .destaques {
-    padding: 80px 0;
-    border-radius: 50px;
+    text-align: left;
+    padding: 40px 500px;
+    margin-top: 100px;
 }
 
-
-.destaque img {
-    border-radius: 50px;
+.destaques h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
 .faixa {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 40px;
+    gap: 40px;
 }
 
-
-
+.destaque-item img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 16px;
+}
 
 .categorias {
     text-align: center;
-    padding: 80px 0;
+    margin-top: 160px;
+}
+
+.categorias h2 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
 }
 
 .categoria-item {
-    display: inline-block;
-    margin: 30px 25px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 35px;
+}
+
+.circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categoria-item p {
+    font-size: 12px;
+    margin-top: 12px;
+    letter-spacing: 2px;
 }
 
 
-
-.INFORMADO {
-    padding: 120px 20%;
+.informado {
+    max-width: 750px;
+    margin: 180px auto;
     text-align: center;
-    background: #131013;
 }
 
-.INFORMADO h2 {
+.informado h2 {
+    font-size: 18px;
+    letter-spacing: 4px;
     margin-bottom: 20px;
-    font-size: 28px;
 }
 
-.INFORMADO p {
-    margin-bottom: 35px;
+.informado p {
+    font-size: 13px;
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0 auto 40px;
 }
 
 
+.compras {
+    text-align: center;
+    margin-bottom: 120px;
+}
 
+.compras h2 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
 
+.quadrado {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+}
 
+.quadrado img {
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+.quadrado p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
