@@ -19,7 +19,6 @@ body {
     background:var(--cor-site);
     color: var(--branco);
     font-family: "Cinzel";
-    -webkit-font-smoothing: antialiased;
     line-height: 1.6;
 }
 
@@ -186,7 +185,7 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: #0d0d0d;
+    background:var(--cor-site);
     display: flex;
     justify-content: center;
     align-items: center;
