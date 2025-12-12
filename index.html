@@ -14,17 +14,18 @@
 <body>
 
     <!-- HEADER -->
+    <div id="sombra"></div>
     <header>
         <img id="logo" src="./img/image 1.svg" alt="Logo da ÍRIS">
 
         <nav id="menu" class="links">
-            <a href="#inicio">INÍCIO</a>
-            <a href="#sobrenos">SOBRE NÓS</a>
+            <a href="#DESTAQUES">DESTAQUES</a>
+            <a href="#explorar">SOBRE NÓS</a>
             <a href="#contato">CONTATO</a>
             <a href="#cadastrese">CADASTRE-SE</a>
         </nav>
 
-        <button type="menu_botao">
+        <!-- <button type="menu_botao">
             <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                 <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 
                 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160z
@@ -44,7 +45,20 @@
                 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 
                 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
             </svg>
+        </button> -->
+        <!-- Menu de Hamburguer-->
+        <button id="menu_botao" onclick="abreFechaMenu()">
+            <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+            </svg>
+
+            <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                    d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+            </svg>
         </button>
+
     </header>
 
     <!-- HERO (BANNER) -->
@@ -56,7 +70,7 @@
         </section>
 
         <!-- EXPLORAR -->
-        <section class="explorar">
+        <section id="explorar" class="explorar">
             <h2>EXPLORAR</h2>
             <p>
                 A Íris abre caminho para uma experiência sensorial única. Nossas criações unem elegância
@@ -70,7 +84,7 @@
         </section>
 
         <!-- DESTAQUES -->
-        <section class="destaques">
+        <section id="DESTAQUES"  class="destaques">
             <h2>DESTAQUES</h2>
 
             <div class="faixa">
@@ -114,13 +128,13 @@
             </div>
 
             <div class="categoria-item">
-                <div class="circulo"></div>
+                <div class="circulo"><img src="./img/vermais.png" alt="vermais"></div>
                 <p>EXPLORAR MAIS</p>
             </div>
         </section>
 
         <!-- INFORMADO -->
-        <section class="informado">
+        <section id="cadastrese" class="informado">
             <h2>MANTENHA-SE INFORMADO</h2>
             <p>
                 Mantenha-se sempre atualizada(o) com nossas novidades. Ao se cadastrar, você recebe promoções
@@ -157,6 +171,86 @@
 
         </section>
 
+        <section id="sobrenos" class="como-funciona">
+            <div class="cards-container">
+
+                <div class="card-info">
+                    <div class="card-img">
+                        <img src="./img/penultima.png" alt="Como o seu perfume é feito">
+                    </div>
+
+                    <p class="card-title">Como o seu perfume é feito</p>
+                    <p class="card-desc">Nesta seção, você conhece
+                        desde a seleção das matérias-primas até as técnicas que garantem qualidade, naturalidade e
+                        autenticidade em cada fragrância.</p>
+                </div>
+            </div>
+
+            <div class="card-info">
+                <div class="card-img">
+                    <img src="./img/imagem final.png" alt="Faça sua própria fragrância">
+                </div>
+
+                <p class="card-title">Faça seu perfume!</p>
+                <p class="card-desc">Nesta parte, você descobre como colocar a mão na massa: nosso curso ensina você a
+                    criar fragrâncias do zero!
+                </p>
+            </div>
+
+        </section>
+        <footer class="footer">
+
+            <div id="contato" class="footer-top">
+                <div class="footer-links">
+                    <a href="#">Ajuda</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Minha Conta</a>
+                    <a href="#">Nossas Lojas</a>
+                    <a href="#">Resgate de Bônus</a>
+                    <a href="#">Trocas e Devoluções</a>
+                </div>
+
+                <div class="footer-fim">
+                    <img src="./img/Conteúdo.svg" class="footer-flor" alt="Logo Íris">
+                    <p>SUA HISTÓRIA TEM UM CHEIRO, DESCUBRA O SEU.</p>
+                </div>
+
+                <div class="footer-social">
+                    <img src="./img/instagram 1.svg" alt="Instagram">
+                    <img src="./img/youtube 1.svg" alt="YouTube">
+                    <img src="./img/facebook 1.svg" alt="Facebook">
+                </div>
+            </div>
+
+            <div class="footer-right">
+
+                <div class="footer-app">
+                    <p>baixe nosso app</p>
+                    <div class="app">
+                        <img src="./img/apple2.svg" alt="Apps">
+                        <img src="./img/playstore.webp" alt="apps">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-texto">
+                    <p>COPYRIGHT © 2025 ÍRIS. INC. TODOS OS DIREITOS RESERVADOS.</p>
+                    <p>ÍRIS PERFUMARIA ARTESANAL LTDA | CNPJ 00.000.000/0000-00</p>
+                    <p>RUA NITERÓI, 180 — SÃO CAETANO DO SUL (SP) - 1º ANDAR - 09510-200</p>
+                </div>
+
+                <div class="footer-pagamentos">
+                    <img src="./img/Group 10.jpg" alt="Mastercard">
+                    <img src="./img/pix-logo-png 1.jpg" alt="Pix">
+                    <img src="./img/elo logo 1.jpg" alt="Elo">
+                </div>
+
+
+        </footer>
     </main>
 
 </body>
