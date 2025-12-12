@@ -431,7 +431,7 @@ header {
     opacity: 0.5;
 }
 
-/* Alinha tudo à direita */
+
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -439,7 +439,7 @@ header {
     gap: 15px;
 }
 
-/* Bloco "Baixe nosso app" */
+
 .footer-app {
     display: flex;
     flex-direction: column;
@@ -455,21 +455,21 @@ opacity: 0.5;
 
 .footer-app p {
     font-size: 15px;
-    color: #e7e7e7;
+    color: var(--branco);
     margin-right: 30px;
     letter-spacing: 5px;
 }
 
-/* Tamanho da imagem dos apps */
+
 .footer-app img {
-    height: 40px;  /* ajuste se quiser maior/menor */
+    height: 40px; 
     width: auto;
     border-radius: 20px;
 }
 
 
 .footer-pagamentos img {
-    height: 24px;     /* ajuste conforme seu modelo */
+    height: 24px;    
     margin-left: 10px;
     margin-right: 40px;
     opacity: 0.85;
